@@ -1,0 +1,15 @@
+html, body {
+  font-family: 'Mulish', 'Lato', Helvetica, sans-serif !important;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

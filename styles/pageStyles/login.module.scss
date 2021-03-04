@@ -1,0 +1,110 @@
+@import '../variables.scss';
+
+.container {
+  max-height: 100vh;
+
+  @media (max-width: $mobile-width) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.loginMain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 360px;
+  position: relative;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
+}
+
+.loginStep {
+  margin-top:24px;
+  overflow: hidden;
+  max-width: 100%;
+
+  @media (max-width: $mobile-width) {
+    padding: 24px;
+  }
+}
+
+.loginForm {
+  label {
+    display: block;
+    font-size: 0.875em;
+    line-height: 120%;
+    color: #777777;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    align-self: flex-start;
+    padding: 16px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 14px;
+
+    &:focus {
+      border: 1px solid #795bfe;
+      outline: none;
+    }
+
+    &.errorInput {
+      border: 1px solid #fe5b5b;
+      outline: none;
+    }
+  }
+
+  & > p {
+    font-size: 0.875em;
+    line-height: 140%;
+    color: #222222;
+    margin-bottom: 40px;
+
+    & > a {
+      color: #43ADBB;
+      font-weight: bold;
+    }
+  }
+
+  & > a {
+    display: block;
+    color: #777777;
+    font-size: 0.875em;
+    margin-top: 24px;
+  }
+
+  & > span.error {
+    font-size: 12px;
+    margin-top: 14px;
+    display: block;
+    color: #fe5b5b;
+  }
+}
+
+.blueButtonRound {
+  border: none;
+  outline: none;
+  background: #795bfe;
+  border-radius: 100px;
+  color: #ffffff;
+  padding: 16px;
+  margin-top: 14px;
+  min-width: 136px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    min-width: 89px;
+  }
+}
